@@ -1,0 +1,70 @@
+Virtual Machine 
+
+Install scp from 
+sudo apt install openssh-server
+
+Scp = secure copy protocol
+
+sudo apt install net-tools
+
+Now we can check i/p address of Ubuntu where we want to transfer the file using “ ifconfig ”
+command. Here Ubuntu has i/p address 10.0.2.4.(inet)
+
+
+Transfer the file using command- scp Test_file.txt raghav@10.0.2.4:
+
+Where Test_file.txt is our file
+raghav is username of Ubuntu
+
+Due to NAT = each VM gets its own IP
+Vmdk =virtual machine disk
+
+
+Download disk image
+Download virtual box (type 2 hypervisor)
+
+NEW
+Give name
+
+Give pth to store machine
+Select type  linux
+
+Version ubuntu 64
+Give ram size 2GB
+Use existing virtual hard disk = folder icon =add =image path =choose
+
+
+Setting up nat network
+
+Click on vm = file  =network= + icon=give name=ok
+CIDR =172.168.2.0/24(optional)
+
+Choose nat network:
+
+Click vm = settings(gear icon) = network = 
+Attached to =NAT network
+Name =NAT network=ok
+
+Reboot
+
+Username =vagrant 
+Password =vagrant
+
+Ifconfig (if not present => sudo apt install net-tools)
+Ping using any VM IP
+
+Create file in one VM
+Touch file.txt
+Nano file.txt = wrtite =ctrl +x ,enter
+
+ls  /home = user's name of VM where we will send file
+
+Scp  file.txt  usernameofdestVM@ipofdest:path(/home/vagrant(do ls for this first))
+
+Enter password = vagrant
+
+Verify using ls on another 
+Cat file.txt
+
+
+

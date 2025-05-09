@@ -1,0 +1,29 @@
+Steps:
+
+gcloud init
+
+Create new conf(2)
+
+Select account/create account
+
+Pick cloud project to use:(2)
+
+New project - give project name-create
+Billing - manage account -my project - link with billing account
+
+Sidebar-moreproducts/app engine -search bar -create application in app engine -scroll -open app creation
+
+Create an application in standard - type in search bar - select"create your project |google app engine"
+-scroll - create app
+
+select language(py)-standard envir -click cloud shell -
+
+In SDK
+
+Cd  ''/folder path"
+-
+gcloud app deploy
+gcloud app browse
+
+
+IN google App Engine = >versions

@@ -1,0 +1,25 @@
+Ques
+
+	1) What is salesforce
+	2) What is cloud computing,benefits
+	3) Paas,iaas,saas
+	4) Is salesforce saas,paas or Iaas
+	5) Benefits of salesforce over AWS and google cloud
+
+FAQ’s: 1). Is it required to move entire org at once? 
+2). Can anyone stay on SalesForce temporarily?
+
+
+Steps
+Go to gear icon = select lightning mode =
+	1) Create  Custom object (student)
+	2) Create fields(class) in fields and relation -> in object manager=>go to particular object => select fields and relation=>add field name = select datatype
+	3) Create tabs = tap setup
+	4) Create app = app setup(app Manger)
+	5) Add tabs (student ,book)
+	6) Add utility(list view)
+	7) Profile = System administrator
+	8) View app in app launcher
+	9) Add records in tabs
+	10) Create lookup relation - object manager - select object to connect(student)=new field - select lookup -related to "related obj name"(book)
+	
